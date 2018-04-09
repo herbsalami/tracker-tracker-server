@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tracker Tracker</title>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script src="Chart.bundle.min.js"></script>
+</head>
+<body>
+<div id="first-area">
+	<h1 id="data-type"></h1>
+	<div id="container">
+		<div class="dropdown">
+		  <button class="dropbtn">Fields</button>
+		  <div class="dropdown-content">
+		    <a href="#" class="field-select" value="leecherCount">Leecher Count</a>
+		    <a href="#" class="field-select" value="seederCount">Seeder Count</a>
+		    <a href="#" class="field-select" value="artistCount">Artist Count</a>
+		    <a href="#" class="field-select" value="enabledUsers">Enabled Users</a>
+		    <a href="#" class="field-select" value="filledRequestCount">Filled Requests</a>
+		    <a href="#" class="field-select" value="perfectFlacCount">Perfect Flacs</a>
+		    <a href="#" class="field-select" value="releaseCount">Release Count</a>
+		    <a href="#" class="field-select" value="requestCount">Request Count</a>
+		    <a href="#" class="field-select" value="torrentCount">Torrent Count</a>
+		    <a href="#" class="field-select" value="usersActiveThisDay">Users Active This Day</a>
+		    <a href="#" class="field-select" value="usersActiveThisMonth">Users Active This Month</a>
+		    <a href="#" class="field-select" value="usersActiveThisWeek">Users Active This Week</a>
+		  </div>
+		</div>
+	</div>
+		<div class="graph-area">
+			<canvas id="myChart" width="0" height="450"></canvas>
+		</div>
+	</div>
+</div>
+<div id="radar-area">
+	<div class="command">
+	Swipe Up!
+	</div>
+<div class="explanation">
+<h1>Ratio of Statistics Compared to What.cd</h1>
+</div>
+<div class="graph-area">
+<canvas id="radarChart" width="0" height="500";></canvas>
+</div>
+</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
